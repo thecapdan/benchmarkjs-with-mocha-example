@@ -1,0 +1,29 @@
+{
+  "name": "benchmarkjs-with-mocha-example",
+  "version": "0.0.1",
+  "description": "trial run of benchmarkjs and without mocha",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha test",
+    "performance": "./node_modules/.bin/mocha perf-test",
+    "bench": "node bench/suite.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thecapdan/benchmarkjs-with-mocha-example.git"
+  },
+  "keywords": [
+    "benchmarkjs"
+  ],
+  "author": "DanielO",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thecapdan/benchmarkjs-with-mocha-example/issues"
+  },
+  "homepage": "https://github.com/thecapdan/benchmarkjs-with-mocha-example#readme",
+  "dependencies": {
+    "benchmark": "^2.1.0",
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3"
+  }
+}
