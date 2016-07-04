@@ -11,8 +11,6 @@ const BENCHMARK_MIN_OPS = {
 
 };
 
-var satisfiesBenchmark = false;
-
 var benchmarkOptions = {
 		'onError': function(event) {
 			throw new Error("Benchmark error for fiboLooping");
@@ -24,10 +22,6 @@ var benchmarkOptions = {
 };
 
 describe('Utils performance', function() {
-	beforeEach(function() {
-	    satisfiesBenchmark = true;
-	});
-
 	describe('Fibo looping', function() {
 	  it('can perform within given benchmark for operations per second', function() {
 	  	this.timeout(10000);//mocha timeout 10 seconds
